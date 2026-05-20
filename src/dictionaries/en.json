@@ -1,0 +1,151 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "getQuote": "Get a Quote"
+  },
+  "home": {
+    "hero": {
+      "badge": "Software Development Company",
+      "title": "Building Software That",
+      "titleHighlight": "Drives Your Business",
+      "subtitle": "We design and develop custom software solutions, web applications, and mobile apps that help businesses grow in the digital era.",
+      "ctaPrimary": "Start Your Project",
+      "ctaSecondary": "View Our Work"
+    },
+    "stats": {
+      "projects": "Projects Delivered",
+      "clients": "Happy Clients",
+      "experience": "Years of Experience",
+      "support": "Customer Support"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "End-to-end software solutions tailored to your needs",
+      "viewAll": "View All Services"
+    },
+    "why": {
+      "title": "Why Choose KNT Technology",
+      "subtitle": "We combine technical expertise with business understanding",
+      "items": [
+        {
+          "title": "Custom Solutions",
+          "description": "Every business is unique. We build software specifically tailored to your workflow and goals."
+        },
+        {
+          "title": "Modern Tech Stack",
+          "description": "We use proven, modern technologies to deliver scalable and maintainable software."
+        },
+        {
+          "title": "On-Time Delivery",
+          "description": "We respect your timeline and deliver projects on schedule without compromising quality."
+        },
+        {
+          "title": "Long-Term Partnership",
+          "description": "We provide ongoing support and maintenance to grow with your business."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Build Something Amazing?",
+      "subtitle": "Let's discuss your project and turn your ideas into reality.",
+      "button": "Contact Us Today"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive software development services for modern businesses",
+    "items": [
+      {
+        "title": "Web Application Development",
+        "description": "Custom web applications built with modern frameworks like Next.js, React, and Node.js. Fast, responsive, and scalable.",
+        "features": ["Responsive Design", "SEO Optimization", "Modern UI/UX", "Cloud Deployment"]
+      },
+      {
+        "title": "Mobile App Development",
+        "description": "Native and cross-platform mobile applications for iOS and Android. Beautiful, performant, and user-friendly.",
+        "features": ["iOS & Android", "React Native", "Native Performance", "App Store Publishing"]
+      },
+      {
+        "title": "Custom Software & ERP",
+        "description": "Tailor-made business software, ERP systems, and internal tools that streamline your operations.",
+        "features": ["Business Process Automation", "ERP Integration", "Inventory Management", "Reporting & Analytics"]
+      },
+      {
+        "title": "System Integration",
+        "description": "Connect your existing systems, APIs, and third-party services for seamless data flow across your organization.",
+        "features": ["API Development", "Third-party Integration", "Data Migration", "Legacy System Modernization"]
+      },
+      {
+        "title": "Cloud Solutions",
+        "description": "Cloud architecture, deployment, and DevOps services using AWS, Azure, and Google Cloud Platform.",
+        "features": ["Cloud Migration", "DevOps & CI/CD", "Serverless Architecture", "Cost Optimization"]
+      },
+      {
+        "title": "Maintenance & Support",
+        "description": "Ongoing maintenance, updates, bug fixes, and technical support to keep your software running smoothly.",
+        "features": ["24/7 Monitoring", "Regular Updates", "Bug Fixes", "Performance Optimization"]
+      }
+    ]
+  },
+  "about": {
+    "title": "About KNT Technology",
+    "subtitle": "Your trusted partner in software development",
+    "story": {
+      "title": "Our Story",
+      "content": "KNT Technology Co., Ltd. was founded with a simple mission: to help businesses leverage technology to achieve their goals. We are a team of passionate software engineers, designers, and consultants dedicated to building software that makes a real difference."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "content": "To empower businesses with custom software solutions that drive growth, efficiency, and innovation."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "content": "To be the trusted technology partner for businesses across Thailand and Southeast Asia, delivering software that creates lasting value."
+    },
+    "values": {
+      "title": "Our Values",
+      "items": [
+        { "title": "Quality First", "description": "We never compromise on the quality of our work." },
+        { "title": "Client Success", "description": "Your success is our success. We're invested in your growth." },
+        { "title": "Innovation", "description": "We embrace new technologies to deliver better solutions." },
+        { "title": "Transparency", "description": "Clear communication and honest relationships with every client." }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Let's discuss how we can help your business",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Tell us about your project",
+      "submit": "Send Message"
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "hours": "Business Hours",
+      "hoursValue": "Monday - Friday, 9:00 AM - 6:00 PM"
+    },
+    "map": {
+      "title": "Find Us",
+      "directions": "Get Directions",
+      "viewLarger": "Open in Google Maps"
+    }
+  },
+  "footer": {
+    "tagline": "Building software that drives your business forward.",
+    "company": "Company",
+    "services": "Services",
+    "contact": "Contact",
+    "follow": "Follow Us",
+    "rights": "All rights reserved."
+  }
+}
