@@ -103,24 +103,6 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl gradient-brand text-xl">
-                    💻
-                  </div>
-                  <div>
-                    <div className="text-sm font-semibold text-ink-500 dark:text-ink-400">
-                      GitHub
-                    </div>
-                    <a
-                      href={company.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-base text-ink-900 hover:text-brand-600 dark:text-white"
-                    >
-                      knt-tech
-                    </a>
-                  </div>
-                </div>
               </div>
             </div>
 

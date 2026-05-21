@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "./dictionaries";
 
 const serviceIcons = ["💻", "📱", "⚙️", "🔗", "☁️", "🛠️"];
+const processIcons = ["💬", "🎨", "⚡", "🔍", "🚀"];
 
 export default async function HomePage({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
@@ -129,6 +130,42 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       </section>
 
       <section className="bg-ink-50 py-20 dark:bg-ink-900">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold sm:text-4xl">
+              {dict.home.process.title}
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-600 dark:text-ink-300">
+              {dict.home.process.subtitle}
+            </p>
+          </div>
+
+          <div className="relative mt-16">
+            <div
+              aria-hidden="true"
+              className="absolute left-0 right-0 top-8 hidden h-0.5 bg-gradient-to-r from-brand-200 via-brand-400 to-brand-200 lg:block dark:from-brand-800 dark:via-brand-500 dark:to-brand-800"
+            />
+            <div className="relative grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+              {dict.home.process.items.map((item, idx) => (
+                <div key={item.title} className="relative text-center">
+                  <div className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-full gradient-brand text-2xl shadow-lg ring-4 ring-ink-50 dark:ring-ink-900">
+                    {processIcons[idx]}
+                    <span className="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-white text-xs font-bold text-brand-600 shadow ring-2 ring-ink-50 dark:bg-ink-950 dark:ring-ink-900">
+                      {idx + 1}
+                    </span>
+                  </div>
+                  <h3 className="mt-5 text-base font-bold">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-ink-600 dark:text-ink-300">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-bold sm:text-4xl">
