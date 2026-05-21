@@ -118,27 +118,31 @@
     ]
   },
   "about": {
-    "title": "About KNT Technology",
+    "title": "Custom Software & Enterprise Solution Company",
     "subtitle": "",
     "story": {
-      "title": "Our Story",
-      "content": "KNT Technology Co., Ltd. helps businesses leverage technology to achieve their goals. We are a team of passionate software engineers, designers, and consultants dedicated to building software that makes a real difference and delivers maximum value to your work."
+      "title": "About Us",
+      "paragraphs": [
+        "KNT Technology Co., Ltd. is an enterprise technology partner specializing in Cloud Infrastructure, ERP Integration, AI Automation, and Enterprise Software Development.",
+        "We help organizations modernize legacy systems, improve operational efficiency, and accelerate digital transformation through scalable and highly secure technology solutions.",
+        "Our expertise spans Enterprise Architecture, cloud technologies, Business Process Automation, and System Integration across diverse industries."
+      ]
     },
     "mission": {
-      "title": "Our Mission",
-      "content": "To drive our partners' digital transformation through innovative software that solves real problems, reduces costs, and sustainably improves operational efficiency."
+      "title": "Mission",
+      "content": "To deliver technology solutions that improve operational efficiency, modernize legacy systems, and create measurable business outcomes for organizations."
     },
     "vision": {
-      "title": "Our Vision",
-      "content": "To be the trusted technology partner for organizations across Thailand and Southeast Asia, building software that creates long-term value for their business."
+      "title": "Vision",
+      "content": "To become a trusted technology partner for organizations across Thailand and Southeast Asia by delivering scalable software and digital solutions that drive long-term business value."
     },
     "values": {
-      "title": "Our Values",
+      "title": "Core Values",
       "items": [
-        { "title": "Quality First", "description": "We never compromise on the quality of our work." },
-        { "title": "Client Success", "description": "Your success is our success. We're invested in your growth." },
-        { "title": "Innovation", "description": "We embrace new technologies to deliver better solutions." },
-        { "title": "Transparency", "description": "Clear communication and honest relationships with every client." }
+        { "title": "Operational Excellence", "description": "We never compromise on the standard of our work." },
+        { "title": "Client Outcomes", "description": "Your success is our goal." },
+        { "title": "Continuous Innovation", "description": "We constantly learn and apply emerging technologies." },
+        { "title": "Transparency", "description": "Clear communication and honest progress reports at every step." }
       ]
     }
   },

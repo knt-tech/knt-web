@@ -39,9 +39,11 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
             </div>
             <div>
               <h2 className="text-3xl font-bold">{dict.about.story.title}</h2>
-              <p className="mt-4 text-lg leading-relaxed text-ink-700 dark:text-ink-200">
-                {dict.about.story.content}
-              </p>
+              <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-700 sm:text-lg dark:text-ink-200">
+                {dict.about.story.paragraphs.map((p, idx) => (
+                  <p key={idx}>{p}</p>
+                ))}
+              </div>
             </div>
           </div>
         </div>
