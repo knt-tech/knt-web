@@ -21,9 +21,6 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
           <h1 className="text-4xl font-extrabold sm:text-5xl">
             {dict.about.title}
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-200">
-            {dict.about.subtitle}
-          </p>
         </div>
       </section>
 
