@@ -41,11 +41,8 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             priority
           />
           <div className="hidden sm:block">
-            <div className="text-sm font-bold text-ink-900 dark:text-white">
-              KNT TECHNOLOGY
-            </div>
-            <div className="text-xs text-ink-500 dark:text-ink-300">
-              CO.,LTD.
+            <div className="text-sm font-bold text-ink-900 dark:text-white whitespace-nowrap">
+              KNT TECHNOLOGY CO., LTD.
             </div>
           </div>
         </Link>

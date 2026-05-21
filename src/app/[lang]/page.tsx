@@ -71,9 +71,9 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
             {[
-              { value: "50+", label: dict.home.stats.projects },
+              { value: "30+", label: dict.home.stats.projects },
               { value: "30+", label: dict.home.stats.clients },
-              { value: "5+", label: dict.home.stats.experience },
+              { value: "10+", label: dict.home.stats.experience },
               { value: "24/7", label: dict.home.stats.support },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
