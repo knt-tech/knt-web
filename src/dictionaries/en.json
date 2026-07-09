@@ -2,181 +2,391 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "solutions": "Solutions",
+    "industries": "Industries",
+    "process": "How We Work",
     "about": "About",
-    "portfolio": "Portfolio",
     "contact": "Contact",
-    "getQuote": "Free Consultation"
+    "getQuote": "Book a Consultation"
   },
   "home": {
     "hero": {
-      "badge": "Software Development & IT Solutions",
-      "title": "Full-Stack Software Development",
-      "titleHighlight": "& IT Solutions Provider",
-      "subtitle": "We help organizations transform digitally with custom software, web applications, and mobile apps — purpose-built to solve real problems, reduce costs, and improve operational efficiency.",
-      "ctaPrimary": "Free Expert Consultation",
-      "ctaSecondary": "Explore Our Services"
+      "badge": "Enterprise Software Partner",
+      "title": "Software built around",
+      "titleHighlight": "how your business actually works",
+      "subtitle": "KNT Technology helps manufacturing, logistics, retail and healthcare organizations replace manual work and disconnected systems with custom ERP, WMS, HRMS and automation platforms — designed through rigorous business analysis and engineered to enterprise standards.",
+      "ctaPrimary": "Book a Free Consultation",
+      "ctaSecondary": "Explore Solutions",
+      "proof": "Business analysis first · Enterprise-grade delivery · A partner for the long term"
     },
     "stats": {
-      "projects": "Projects Delivered",
-      "clients": "Happy Clients",
-      "experience": "Years of Team Experience",
-      "support": "Customer Support"
+      "projects": "Projects delivered",
+      "industries": "Core industries served",
+      "experience": "Years of combined experience",
+      "support": "Support & monitoring"
     },
-    "services": {
-      "title": "Our Services",
-      "subtitle": "End-to-end software solutions tailored to your needs",
-      "viewAll": "View All Services"
-    },
-    "process": {
-      "title": "Our Process",
-      "subtitle": "Systematic, transparent, and delivered on schedule",
+    "why": {
+      "title": "Why organizations choose KNT Technology",
+      "subtitle": "We pair deep business analysis with enterprise-grade engineering, so technology delivers measurable outcomes — not just features.",
       "items": [
         {
-          "title": "Consult & Analyze",
-          "description": "We dig deep to understand your problems and goals, then craft the optimal strategy before writing a single line of code."
+          "title": "We understand the business first",
+          "description": "Before proposing a solution, we map your processes, constraints and goals. You get software that fits how your team actually operates — not a template forced onto it."
         },
         {
-          "title": "Design & Plan",
-          "description": "Wireframes, UX/UI design, and system architecture — all planned and approved before development begins."
+          "title": "Engineered to enterprise standards",
+          "description": "Secure, scalable and maintainable systems your IT team and auditors can trust — with clean architecture, documentation and clear ownership."
         },
         {
-          "title": "Develop",
-          "description": "Built with modern tech stacks, clean code, and weekly progress reports so you always know where we stand."
+          "title": "Tailor-made, not off-the-shelf",
+          "description": "Custom ERP, WMS and HRMS designed around your real workflows, integrations and reporting — so the system adapts to you, not the other way around."
         },
         {
-          "title": "Test & QA",
-          "description": "Every feature tested for performance, security, and UX — meeting international standards before deployment."
-        },
-        {
-          "title": "Deploy & Support",
-          "description": "Production deployment with documentation and team training, plus ongoing maintenance and technical support."
+          "title": "A partner for the long term",
+          "description": "Training, documentation, SLA-backed support and a shared roadmap. We stay involved long after go-live to help your systems evolve with the business."
         }
       ]
     },
-    "why": {
-      "title": "Why Choose KNT Technology",
-      "subtitle": "We combine technical expertise with business understanding",
+    "services": {
+      "title": "What we do",
+      "subtitle": "End-to-end capabilities to design, build, integrate and support enterprise software.",
+      "viewAll": "View all services"
+    },
+    "solutions": {
+      "title": "Solutions built for how you operate",
+      "subtitle": "Productized platforms we tailor to your workflows — from the shop floor to the back office.",
+      "viewAll": "Explore all solutions"
+    },
+    "industries": {
+      "title": "Industries we know",
+      "subtitle": "We speak the language of your operation — its bottlenecks, compliance needs and margins.",
+      "viewAll": "See all industries"
+    },
+    "process": {
+      "title": "A delivery process built on transparency",
+      "subtitle": "Systematic, standards-driven and visible at every step — so there are no surprises.",
+      "viewAll": "See how we work",
       "items": [
         {
-          "title": "Custom Solutions",
-          "description": "Every business is unique. We build software specifically tailored to your workflow and goals."
+          "title": "Discovery & Business Analysis",
+          "description": "We map your processes, data and goals to define the real problem before proposing any solution."
         },
         {
-          "title": "Modern Tech Stack",
-          "description": "We use proven, modern technologies to deliver scalable and maintainable software."
+          "title": "Solution Design & Architecture",
+          "description": "UX, data models and system architecture — reviewed and approved with you before development begins."
         },
         {
-          "title": "On-Time Delivery",
-          "description": "We respect your timeline and deliver projects on schedule without compromising quality."
+          "title": "Development & Iteration",
+          "description": "Built in short cycles with working demos and progress reports, so you steer the direction throughout."
         },
         {
-          "title": "Long-Term Partnership",
-          "description": "We provide ongoing support and maintenance to grow with your business."
+          "title": "Quality Assurance & Security",
+          "description": "Every release is tested for functionality, performance and security against defined acceptance criteria."
+        },
+        {
+          "title": "Deployment & Support",
+          "description": "Go-live with documentation and team training, backed by SLA support and continuous improvement."
+        }
+      ]
+    },
+    "commitments": {
+      "title": "Standards we hold ourselves to",
+      "subtitle": "Enterprise buyers need confidence before they need code. These are the commitments behind every engagement.",
+      "items": [
+        {
+          "title": "Security by design",
+          "description": "Role-based access, encryption in transit and at rest, audit trails and secure coding practices are built in — not bolted on."
+        },
+        {
+          "title": "Quality assurance",
+          "description": "Structured testing against agreed acceptance criteria, with performance and security checks before every release."
+        },
+        {
+          "title": "Full transparency",
+          "description": "Fixed scope, clear milestones and honest progress reporting. You always know where your project stands."
+        },
+        {
+          "title": "You own everything",
+          "description": "Source code, documentation and infrastructure are yours. No lock-in, no dependency on a single vendor."
         }
       ]
     },
     "cta": {
-      "title": "Ready to Take Your Business to the Next Level?",
-      "subtitle": "Get a free consultation with our experts — we'll analyze your needs and propose the right solution for you.",
-      "button": "Schedule a Meeting"
+      "title": "Let's find the highest-value place to start",
+      "subtitle": "Book a free consultation. We'll review your current operation, identify where technology can create measurable impact, and propose a clear, no-obligation path forward.",
+      "button": "Book a Free Consultation"
     }
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "Comprehensive software development and IT solutions for modern enterprises",
+    "title": "Services",
+    "subtitle": "End-to-end capabilities to design, build, integrate and support the systems your business runs on.",
+    "intro": "From the first business-analysis workshop to long-term managed support, we cover the full lifecycle of enterprise software — so you work with one accountable partner instead of coordinating many.",
     "items": [
       {
-        "title": "Web Application Development",
-        "description": "Turn your business ideas into reality with scalable, fast, and secure web applications — built to international standards.",
-        "features": ["Responsive Design", "SEO Optimization", "Modern UI/UX", "Cloud Deployment"]
+        "title": "Business Analysis & Solution Design",
+        "description": "We start where most vendors skip: understanding your operation. Through process mapping and stakeholder workshops, we define the real requirements and design the right solution before a line of code is written.",
+        "features": ["Process & requirements analysis", "Stakeholder workshops", "Solution & data architecture", "Feasibility & ROI assessment"]
       },
       {
-        "title": "Mobile App Development",
-        "description": "Deliver smooth mobile experiences to your customers on iOS and Android, using Native or Cross-platform — whichever fits best.",
-        "features": ["iOS & Android", "React Native", "Native Performance", "App Store Publishing"]
+        "title": "Custom Software Development",
+        "description": "Purpose-built web applications and internal platforms engineered to your exact workflows — scalable, secure and maintainable, with clean code your team can build on.",
+        "features": ["Web & internal platforms", "Scalable architecture", "Secure by design", "Clean, documented code"]
       },
       {
-        "title": "Custom Software & ERP",
-        "description": "Speed up and simplify your operations with custom software and ERP systems designed around your actual workflows.",
-        "features": ["Business Process Automation", "ERP Integration", "Inventory Management", "Reporting & Analytics"]
+        "title": "ERP & Enterprise Systems",
+        "description": "Tailor-made ERP and enterprise platforms that unify finance, inventory, procurement and operations into one reliable source of truth — configured for your business, not a generic template.",
+        "features": ["Custom ERP modules", "Inventory & procurement", "Finance & reporting", "Role-based access control"]
       },
       {
-        "title": "System Integration",
-        "description": "Connect fragmented systems seamlessly, eliminate duplicate data entry, and save your team's time across the organization.",
-        "features": ["API Development", "Third-party Integration", "Data Migration", "Legacy System Modernization"]
+        "title": "Mobile Application Development",
+        "description": "Native and cross-platform apps for customers, field teams and warehouse staff — fast, reliable and built to work in real operating conditions, online or offline.",
+        "features": ["iOS & Android", "Cross-platform (React Native)", "Offline-capable", "App Store & Play publishing"]
       },
       {
-        "title": "Cloud Solutions",
-        "description": "Move your systems to the cloud for flexibility, reliability, and long-term cost savings — across AWS, Azure, and Google Cloud.",
-        "features": ["Cloud Migration", "DevOps & CI/CD", "Serverless Architecture", "Cost Optimization"]
+        "title": "System Integration & APIs",
+        "description": "Connect ERP, accounting, e-commerce and legacy systems so data flows automatically. Eliminate duplicate entry, reconcile in real time and give teams one accurate view.",
+        "features": ["API development", "Third-party & ERP integration", "Data migration", "Legacy modernization"]
       },
       {
-        "title": "Maintenance & Support",
-        "description": "Keep your software running smoothly 24/7. Our technical team responds quickly to issues and keeps your tech stack up-to-date.",
-        "features": ["24/7 Monitoring", "Regular Updates", "Bug Fixes", "Performance Optimization"]
+        "title": "Maintenance & Managed Support",
+        "description": "Keep critical systems running with proactive monitoring, SLA-backed response and continuous improvement — so issues are resolved before they affect your operation.",
+        "features": ["SLA-backed support", "Proactive monitoring", "Updates & security patches", "Performance optimization"]
       }
-    ]
+    ],
+    "cta": {
+      "title": "Not sure which service you need?",
+      "subtitle": "That's exactly what our discovery consultation is for. We'll help you scope the right approach — no obligation.",
+      "button": "Book a Free Consultation"
+    }
+  },
+  "solutions": {
+    "title": "Solutions",
+    "subtitle": "Productized enterprise platforms, tailored to how your business actually operates.",
+    "intro": "These are the systems we build most often. Each is engineered around your workflows, integrated with your existing tools, and delivered with the training and support to make adoption stick.",
+    "items": [
+      {
+        "title": "ERP Systems",
+        "description": "Unify finance, inventory, procurement, sales and operations into a single platform. Replace spreadsheets and disconnected tools with one accurate, real-time source of truth.",
+        "outcomes": ["One source of truth across departments", "Real-time inventory & financial visibility", "Automated approvals & workflows", "Reporting leadership can act on"]
+      },
+      {
+        "title": "Warehouse Management (WMS)",
+        "description": "Take control of receiving, put-away, picking, packing and dispatch. Barcode and mobile-driven workflows that cut errors and give you real-time stock accuracy.",
+        "outcomes": ["Real-time stock accuracy", "Barcode & mobile picking", "Faster, error-free fulfillment", "Full inbound-to-outbound traceability"]
+      },
+      {
+        "title": "HR Management (HRMS)",
+        "description": "Digitize the full employee lifecycle — from onboarding and time attendance to payroll, leave and performance — in one secure, self-service system.",
+        "outcomes": ["Automated time & attendance", "Streamlined payroll & leave", "Employee self-service portal", "Compliance-ready records"]
+      },
+      {
+        "title": "Manufacturing Systems (MES)",
+        "description": "Connect the shop floor to the back office. Plan production, track work orders, monitor output and manage quality with live visibility across the line.",
+        "outcomes": ["Production planning & scheduling", "Real-time work-order tracking", "Quality & defect management", "Machine & output monitoring"]
+      },
+      {
+        "title": "Business Process Automation",
+        "description": "Replace repetitive manual work — approvals, data entry, document handling and reporting — with reliable automated workflows that free your team for higher-value work.",
+        "outcomes": ["Automated approvals & routing", "Fewer manual errors", "Faster cycle times", "Complete audit trails"]
+      },
+      {
+        "title": "Digital Transformation",
+        "description": "Modernize legacy systems and manual processes into secure, scalable digital platforms — with a phased roadmap that manages risk and delivers value at every step.",
+        "outcomes": ["Legacy system modernization", "Phased, low-risk migration", "Cloud-ready architecture", "Measurable efficiency gains"]
+      }
+    ],
+    "labels": {
+      "outcomes": "Outcomes you can expect"
+    },
+    "cta": {
+      "title": "Have a system in mind — or a problem to solve?",
+      "subtitle": "Whether you know exactly what you need or just where it hurts, we'll help you shape the right solution.",
+      "button": "Discuss Your Requirements"
+    }
+  },
+  "industries": {
+    "title": "Industries",
+    "subtitle": "We build for operations, not just interfaces — and we know what your industry demands.",
+    "intro": "Every industry has its own bottlenecks, compliance requirements and margins. Our business-analysis approach means we design around yours, drawing on patterns proven in operational environments.",
+    "items": [
+      {
+        "title": "Manufacturing",
+        "description": "Connect production, inventory and quality into one system. Move from paper and spreadsheets to real-time visibility across the shop floor.",
+        "points": ["Production planning & MES", "Inventory & materials control", "Quality & traceability", "OEE and output reporting"]
+      },
+      {
+        "title": "Logistics & Supply Chain",
+        "description": "Give your warehouse and distribution teams accurate, real-time control — from inbound receiving to last-mile dispatch.",
+        "points": ["Warehouse management (WMS)", "Barcode & mobile operations", "Route & delivery tracking", "Inventory accuracy"]
+      },
+      {
+        "title": "Retail & Distribution",
+        "description": "Unify inventory, sales channels and back-office operations so stock, orders and reporting stay in sync across every location.",
+        "points": ["Inventory & stock control", "POS & e-commerce integration", "Multi-branch operations", "Sales & margin analytics"]
+      },
+      {
+        "title": "Healthcare",
+        "description": "Digitize records, scheduling and operations with security and privacy built in — so staff spend less time on paperwork and more on care.",
+        "points": ["Patient & records management", "Appointment scheduling", "Secure, privacy-first data", "Operational reporting"]
+      },
+      {
+        "title": "Construction & Real Estate",
+        "description": "Track projects, resources and costs in real time — keeping sites, procurement and the office aligned on one platform.",
+        "points": ["Project & resource tracking", "Procurement & cost control", "Document management", "Progress reporting"]
+      },
+      {
+        "title": "Food & Beverage",
+        "description": "Manage production, inventory and traceability to meet quality and safety standards — with full visibility from raw materials to dispatch.",
+        "points": ["Batch & lot traceability", "Inventory & expiry control", "Production management", "Quality & compliance records"]
+      }
+    ],
+    "cta": {
+      "title": "Don't see your exact operation?",
+      "subtitle": "Our process starts by understanding your business — so we adapt to any industry. Let's talk about yours.",
+      "button": "Book a Free Consultation"
+    }
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "A transparent, standards-driven delivery process — so you always know what's happening, and why.",
+    "intro": "Great software starts with understanding the business, not writing code. Our process is designed to reduce risk, keep you in control, and deliver systems your team will actually adopt.",
+    "steps": [
+      {
+        "title": "Discovery & Business Analysis",
+        "description": "We start by understanding your operation end to end — mapping processes, data flows, pain points and goals. The outcome is a clear, agreed definition of the problem and what success looks like.",
+        "deliverables": ["Process & requirements analysis", "Stakeholder interviews", "Scope & success criteria", "Effort & ROI assessment"]
+      },
+      {
+        "title": "Solution Design & Architecture",
+        "description": "We translate requirements into a concrete plan: user experience, data models, integrations and system architecture — reviewed and approved with you before any development begins.",
+        "deliverables": ["UX/UI wireframes", "Data & system architecture", "Integration plan", "Project roadmap & milestones"]
+      },
+      {
+        "title": "Development & Iteration",
+        "description": "We build in short, focused cycles with working demos at the end of each. You see progress continuously and can adjust priorities as the system takes shape — no black boxes.",
+        "deliverables": ["Iterative development sprints", "Regular working demos", "Progress reporting", "Continuous feedback loop"]
+      },
+      {
+        "title": "Quality Assurance & Security",
+        "description": "Every release is verified against agreed acceptance criteria and tested for functionality, performance and security — so what goes live is dependable under real conditions.",
+        "deliverables": ["Functional & UAT testing", "Performance testing", "Security review", "Acceptance sign-off"]
+      },
+      {
+        "title": "Deployment & Enablement",
+        "description": "We deploy to production with a controlled rollout, complete documentation and hands-on team training — so your people are confident and productive from day one.",
+        "deliverables": ["Controlled go-live", "Technical documentation", "Team training", "Handover & knowledge transfer"]
+      },
+      {
+        "title": "Support & Continuous Improvement",
+        "description": "After go-live we stay on as your partner — with SLA-backed support, proactive monitoring and a roadmap to keep improving the system as your business evolves.",
+        "deliverables": ["SLA-backed support", "Proactive monitoring", "Updates & security patches", "Ongoing roadmap"]
+      }
+    ],
+    "principles": {
+      "title": "Principles behind every engagement",
+      "items": [
+        { "title": "Transparency", "description": "Clear scope, honest reporting and no surprises — you always know where your project stands." },
+        { "title": "Enterprise standards", "description": "Security, scalability and maintainability are non-negotiable, from architecture to handover." },
+        { "title": "You stay in control", "description": "You own the code, the data and the decisions at every milestone." },
+        { "title": "Outcomes over output", "description": "Success is measured by the business impact delivered, not the number of features shipped." }
+      ]
+    },
+    "cta": {
+      "title": "Ready to start with a clear first step?",
+      "subtitle": "Our discovery consultation is free and puts you under no obligation. It's the best way to see how we work.",
+      "button": "Book a Free Consultation"
+    }
   },
   "about": {
-    "title": "Custom Software & Enterprise Solution Company",
-    "subtitle": "",
+    "title": "Your enterprise technology partner",
+    "subtitle": "We solve business problems through technology — starting with understanding the business.",
     "story": {
-      "title": "About Us",
+      "title": "About KNT Technology",
       "paragraphs": [
-        "KNT Technology Co., Ltd. is an enterprise technology partner specializing in Cloud Infrastructure, ERP Integration, AI Automation, and Enterprise Software Development.",
-        "We help organizations modernize legacy systems, improve operational efficiency, and accelerate digital transformation through scalable and highly secure technology solutions.",
-        "Our expertise spans Enterprise Architecture, cloud technologies, Business Process Automation, and System Integration across diverse industries."
+        "KNT Technology Co., Ltd. is an enterprise software partner. We help organizations across manufacturing, logistics, retail and healthcare modernize how they operate — replacing manual work and disconnected systems with custom software built to enterprise standards.",
+        "Our belief is simple: technology should serve the business, not the other way around. That's why every engagement begins with business analysis — understanding your processes, constraints and goals before we design or build anything.",
+        "From ERP, warehouse and HR systems to system integration and business process automation, we deliver solutions that improve efficiency, reduce cost and give leadership the visibility to make better decisions — and we stay on as a long-term partner to help them evolve."
       ]
     },
     "mission": {
       "title": "Mission",
-      "content": "To deliver technology solutions that improve operational efficiency, modernize legacy systems, and create measurable business outcomes for organizations."
+      "content": "To help organizations run better through technology — delivering software that improves operational efficiency, modernizes legacy systems and creates measurable business outcomes."
     },
     "vision": {
       "title": "Vision",
-      "content": "To become a trusted technology partner for organizations across Thailand and Southeast Asia by delivering scalable software and digital solutions that drive long-term business value."
+      "content": "To be the trusted enterprise software partner for organizations across Thailand and Southeast Asia — known for understanding the business as deeply as the technology."
     },
     "values": {
-      "title": "Core Values",
+      "title": "What we stand for",
       "items": [
-        { "title": "Operational Excellence", "description": "We never compromise on the standard of our work." },
-        { "title": "Client Outcomes", "description": "Your success is our goal." },
-        { "title": "Continuous Innovation", "description": "We constantly learn and apply emerging technologies." },
-        { "title": "Transparency", "description": "Clear communication and honest progress reports at every step." }
+        { "title": "Business before code", "description": "We invest in understanding your operation first. The right solution starts with the right questions." },
+        { "title": "Client outcomes", "description": "We measure success by the impact we create for your business — efficiency, cost and growth." },
+        { "title": "Enterprise standards", "description": "Security, scalability and quality are built into everything we deliver, without compromise." },
+        { "title": "Transparency", "description": "Clear communication, honest reporting and no surprises — from first workshop to long-term support." }
+      ]
+    },
+    "commitments": {
+      "title": "How we build trust",
+      "subtitle": "Confidence comes before code. These are the commitments behind every project.",
+      "items": [
+        { "title": "Security by design", "description": "Role-based access, encryption and audit trails built in from the start — not added later." },
+        { "title": "Quality assurance", "description": "Structured testing against agreed criteria before anything reaches production." },
+        { "title": "Ownership & no lock-in", "description": "Your code, data and infrastructure are yours. You're never dependent on a single vendor." },
+        { "title": "Long-term support", "description": "SLA-backed maintenance and a shared roadmap keep your systems healthy as you grow." }
       ]
     }
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "Let's discuss how we can help your business",
+    "title": "Let's talk about your business",
+    "subtitle": "Book a free consultation. Tell us where it hurts, and we'll help you find the highest-value place to start.",
+    "next": {
+      "title": "What happens next",
+      "steps": [
+        "We review your message and reply within one business day.",
+        "We schedule a short discovery call to understand your goals.",
+        "You receive a clear, no-obligation proposal and next steps."
+      ]
+    },
     "form": {
-      "name": "Your Name",
-      "email": "Email Address",
-      "phone": "Phone Number",
-      "subject": "Subject",
-      "message": "Tell us about your project",
-      "submit": "Send Message"
+      "name": "Full name",
+      "company": "Company",
+      "email": "Work email",
+      "phone": "Phone number",
+      "industry": "Industry",
+      "industryOptions": ["Manufacturing", "Logistics & Supply Chain", "Retail & Distribution", "Healthcare", "Construction & Real Estate", "Food & Beverage", "Other"],
+      "subject": "How can we help?",
+      "subjectOptions": ["Custom software development", "ERP / enterprise system", "Warehouse management (WMS)", "HR management (HRMS)", "System integration", "Not sure yet — need advice"],
+      "message": "Tell us about your project or challenge",
+      "submit": "Send Message",
+      "required": "Required",
+      "optional": "Optional",
+      "successTitle": "Thank you — we've received your message.",
+      "successBody": "One of our team will get back to you within one business day.",
+      "sending": "Sending…"
     },
     "info": {
       "email": "Email",
       "phone": "Phone",
       "address": "Address",
       "hours": "Business Hours",
-      "hoursValue": "Monday - Friday  9:00 AM - 6:00 PM"
+      "hoursValue": "Monday – Friday, 9:00 AM – 6:00 PM"
     },
     "map": {
-      "title": "Find Us",
+      "title": "Visit our office",
       "directions": "Get Directions",
       "viewLarger": "Open in Google Maps"
     }
   },
   "footer": {
-    "tagline": "Building software that drives your business forward.",
+    "tagline": "An enterprise software partner helping organizations run better through custom ERP, WMS, HRMS and automation — built on business analysis and enterprise standards.",
     "company": "Company",
     "services": "Services",
+    "solutions": "Solutions",
     "contact": "Contact",
-    "follow": "Follow Us",
+    "follow": "Follow us",
     "rights": "All rights reserved.",
-    "registered": "Registered business in Thailand"
+    "registered": "Registered business in Thailand",
+    "ctaTitle": "Ready to modernize your operation?",
+    "ctaButton": "Book a Consultation"
   }
 }
