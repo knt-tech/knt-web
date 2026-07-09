@@ -20,6 +20,9 @@ interface ContactFormProps {
     successTitle: string;
     successBody: string;
     sending: string;
+    errorTitle: string;
+    errorBody: string;
+    retry: string;
   };
 }
 
@@ -37,15 +40,30 @@ function RequiredMark({ label }: { label: string }) {
 export default function ContactForm({ dict }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    // NOTE: front-end demo only — wire this to an email service / API route
-    // (e.g. a POST handler) to actually deliver submissions.
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitted(true);
-    setLoading(false);
+    setError(false);
+
+    const form = e.currentTarget;
+    const payload = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error(`status ${res.status}`);
+      setSubmitted(true);
+      form.reset();
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -70,6 +88,15 @@ export default function ContactForm({ dict }: ContactFormProps) {
       onSubmit={handleSubmit}
       className="rounded-2xl border border-ink-100 bg-white p-6 shadow-sm sm:p-8 dark:border-ink-800 dark:bg-ink-900"
     >
+      {/* Honeypot — hidden from users, catches spam bots. */}
+      <input
+        type="text"
+        name="botcheck"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+      />
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="text-sm font-semibold text-ink-700 dark:text-ink-200">
@@ -135,6 +162,17 @@ export default function ContactForm({ dict }: ContactFormProps) {
         </label>
         <textarea id="message" name="message" rows={6} required className={fieldClass} />
       </div>
+      {error ? (
+        <div
+          role="alert"
+          className="mt-6 rounded-lg border border-red-200 bg-red-50 p-4 text-sm dark:border-red-500/30 dark:bg-red-500/10"
+        >
+          <div className="font-semibold text-red-700 dark:text-red-300">
+            {dict.errorTitle}
+          </div>
+          <p className="mt-1 text-red-600 dark:text-red-300/80">{dict.errorBody}</p>
+        </div>
+      ) : null}
       <button
         type="submit"
         disabled={loading}
@@ -144,7 +182,7 @@ export default function ContactForm({ dict }: ContactFormProps) {
           dict.sending
         ) : (
           <>
-            {dict.submit}
+            {error ? dict.retry : dict.submit}
             <Icon name="arrow-right" className="h-5 w-5" />
           </>
         )}
