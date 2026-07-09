@@ -74,9 +74,10 @@ h3,
   background: linear-gradient(135deg, #c81e6a 0%, #e11d74 55%, #a41857 100%);
 }
 
-/* A deep plum→ink gradient for hero and CTA panels — branded but sober. */
+/* A rich plum→magenta gradient for hero and CTA panels — clearly on-brand
+   while staying dark enough for white text. */
 .gradient-brand-dark {
-  background: linear-gradient(140deg, #2a1230 0%, #171526 45%, #0d1017 100%);
+  background: linear-gradient(140deg, #9a1c5b 0%, #5f1743 45%, #2c1324 100%);
 }
 
 .gradient-text {
