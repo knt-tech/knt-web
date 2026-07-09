@@ -1,28 +1,32 @@
 @import "tailwindcss";
 
 @theme {
+  /* Brand — magenta→plum, derived from the KNT logo. Used for accents,
+     gradients and calls-to-action. */
   --color-brand-50: #fdf2f8;
   --color-brand-100: #fce7f3;
   --color-brand-200: #fbcfe8;
   --color-brand-300: #f9a8d4;
-  --color-brand-400: #f472b6;
-  --color-brand-500: #e91e63;
-  --color-brand-600: #d81b8c;
-  --color-brand-700: #be185d;
-  --color-brand-800: #9d174d;
-  --color-brand-900: #831843;
+  --color-brand-400: #f072b0;
+  --color-brand-500: #e11d74;
+  --color-brand-600: #c81e6a;
+  --color-brand-700: #a41857;
+  --color-brand-800: #841548;
+  --color-brand-900: #6d143d;
 
-  --color-ink-50: #f5f3ff;
-  --color-ink-100: #ede9fe;
-  --color-ink-200: #ddd6fe;
-  --color-ink-300: #c4b5fd;
-  --color-ink-400: #a78bfa;
-  --color-ink-500: #6b46c1;
-  --color-ink-600: #4c1d95;
-  --color-ink-700: #3b1879;
-  --color-ink-800: #2c1b4a;
-  --color-ink-900: #1a0f33;
-  --color-ink-950: #110823;
+  /* Ink — a neutral slate scale for text, borders and surfaces. Cool, sober
+     and highly legible: the backbone of an enterprise-grade interface. */
+  --color-ink-50: #f6f7f9;
+  --color-ink-100: #eceef2;
+  --color-ink-200: #d9dde5;
+  --color-ink-300: #b7bfce;
+  --color-ink-400: #8b95a9;
+  --color-ink-500: #647089;
+  --color-ink-600: #4b566c;
+  --color-ink-700: #3a4356;
+  --color-ink-800: #232a38;
+  --color-ink-900: #161b26;
+  --color-ink-950: #0d1017;
 
   --font-sans: var(--font-sans);
   --font-display: var(--font-display);
@@ -30,13 +34,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #1a0f33;
+  --foreground: #161b26;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #110823;
-    --foreground: #f5f3ff;
+    --background: #0d1017;
+    --foreground: #f6f7f9;
   }
 }
 
@@ -51,21 +55,47 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.gradient-brand {
-  background: linear-gradient(135deg, #d81b8c 0%, #e91e63 50%, #c2185b 100%);
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display), var(--font-sans), system-ui, sans-serif;
+  letter-spacing: -0.02em;
 }
 
+/* Visible, on-brand focus ring for keyboard users (accessibility). */
+:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.gradient-brand {
+  background: linear-gradient(135deg, #c81e6a 0%, #e11d74 55%, #a41857 100%);
+}
+
+/* A deep plum→ink gradient for hero and CTA panels — branded but sober. */
 .gradient-brand-dark {
-  background: linear-gradient(135deg, #2c1b4a 0%, #1a0f33 100%);
+  background: linear-gradient(140deg, #2a1230 0%, #171526 45%, #0d1017 100%);
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #d81b8c 0%, #e91e63 50%, #c2185b 100%);
+  background: linear-gradient(135deg, #e11d74 0%, #c81e6a 50%, #a41857 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .glow-brand {
-  box-shadow: 0 0 40px rgba(216, 27, 140, 0.3);
+  box-shadow: 0 0 40px rgba(200, 30, 106, 0.3);
+}
+
+/* Subtle dotted grid used behind hero/section backgrounds. */
+.bg-grid {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(148, 149, 169, 0.12) 1px,
+    transparent 0
+  );
+  background-size: 32px 32px;
 }
