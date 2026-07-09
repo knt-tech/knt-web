@@ -37,6 +37,11 @@ export default function Footer({ lang, dict }: FooterProps) {
             <p className="mt-4 max-w-md text-sm text-ink-600 dark:text-ink-300">
               {dict.footer.tagline}
             </p>
+            <address className="mt-4 text-sm not-italic leading-relaxed text-ink-500 dark:text-ink-400">
+              {address.line1}
+              <br />
+              {address.line2}
+            </address>
 
             <div className="mt-6 flex gap-3">
               <a
@@ -102,58 +107,60 @@ export default function Footer({ lang, dict }: FooterProps) {
 
           <div>
             <h3 className="text-sm font-semibold text-ink-900 dark:text-white">
-              {dict.footer.company}
+              {dict.footer.solutions}
             </h3>
             <ul className="mt-3 space-y-2 text-sm">
-              <li>
-                <Link
-                  href={`/${lang}/about`}
-                  className="text-ink-600 hover:text-brand-600 dark:text-ink-300"
-                >
-                  {dict.nav.about}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${lang}/services`}
-                  className="text-ink-600 hover:text-brand-600 dark:text-ink-300"
-                >
-                  {dict.nav.services}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${lang}/contact`}
-                  className="text-ink-600 hover:text-brand-600 dark:text-ink-300"
-                >
-                  {dict.nav.contact}
-                </Link>
-              </li>
+              {[
+                { href: `/${lang}/solutions`, label: dict.nav.solutions },
+                { href: `/${lang}/services`, label: dict.nav.services },
+                { href: `/${lang}/industries`, label: dict.nav.industries },
+                { href: `/${lang}/process`, label: dict.nav.process },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-ink-600 hover:text-brand-600 dark:text-ink-300"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold text-ink-900 dark:text-white">
-              {dict.footer.contact}
+              {dict.footer.company}
             </h3>
-            <ul className="mt-3 space-y-2 text-sm text-ink-600 dark:text-ink-300">
+            <ul className="mt-3 space-y-2 text-sm">
+              {[
+                { href: `/${lang}/about`, label: dict.nav.about },
+                { href: `/${lang}/contact`, label: dict.nav.contact },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-ink-600 hover:text-brand-600 dark:text-ink-300"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
               <li>
                 <a
                   href={`mailto:${company.email}`}
-                  className="break-all hover:text-brand-600"
+                  className="break-all text-ink-600 hover:text-brand-600 dark:text-ink-300"
                 >
                   {company.email}
                 </a>
               </li>
               <li>
-                <a href={`tel:${company.phoneRaw}`} className="hover:text-brand-600">
+                <a
+                  href={`tel:${company.phoneRaw}`}
+                  className="text-ink-600 hover:text-brand-600 dark:text-ink-300"
+                >
                   {company.phone}
                 </a>
-              </li>
-              <li className="pt-2 text-xs leading-relaxed">
-                {address.line1}
-                <br />
-                {address.line2}
               </li>
             </ul>
           </div>

@@ -19,6 +19,8 @@ export default function Navbar({ lang, dict }: NavbarProps) {
   const navItems = [
     { href: `/${lang}`, label: dict.nav.home },
     { href: `/${lang}/services`, label: dict.nav.services },
+    { href: `/${lang}/solutions`, label: dict.nav.solutions },
+    { href: `/${lang}/industries`, label: dict.nav.industries },
     { href: `/${lang}/about`, label: dict.nav.about },
     { href: `/${lang}/contact`, label: dict.nav.contact },
   ];
@@ -47,7 +49,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
           </div>
         </Link>
 
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-1 lg:flex">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -67,15 +69,16 @@ export default function Navbar({ lang, dict }: NavbarProps) {
           <LanguageSwitcher currentLocale={lang} />
           <Link
             href={`/${lang}/contact`}
-            className="hidden rounded-lg gradient-brand px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:shadow-md hover:scale-105 md:inline-flex"
+            className="hidden rounded-lg gradient-brand px-4 py-2 text-sm font-semibold text-white shadow-sm transition-all hover:shadow-md hover:scale-105 lg:inline-flex"
           >
             {dict.nav.getQuote}
           </Link>
           <button
             type="button"
             onClick={() => setIsOpen(!isOpen)}
-            className="rounded-lg p-2 text-ink-700 hover:bg-ink-50 md:hidden dark:text-ink-200 dark:hover:bg-ink-800"
+            className="rounded-lg p-2 text-ink-700 hover:bg-ink-50 lg:hidden dark:text-ink-200 dark:hover:bg-ink-800"
             aria-label="Toggle menu"
+            aria-expanded={isOpen}
           >
             <svg
               className="h-6 w-6"
@@ -104,7 +107,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
       </nav>
 
       {isOpen && (
-        <div className="border-t border-ink-100 bg-white md:hidden dark:border-ink-800 dark:bg-ink-950">
+        <div className="border-t border-ink-100 bg-white lg:hidden dark:border-ink-800 dark:bg-ink-950">
           <div className="space-y-1 px-4 py-3">
             {navItems.map((item) => (
               <Link
