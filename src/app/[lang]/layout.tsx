@@ -5,6 +5,8 @@ import "../globals.css";
 import { getDictionary, hasLocale, locales } from "./dictionaries";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
+import { siteUrl } from "@/lib/company";
 
 const sarabun = Sarabun({
   weight: ["300", "400", "500", "600", "700"],
@@ -25,30 +27,46 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://knttechsolution.com"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "KNT Technology Co., Ltd. — Software Development",
+    default:
+      "KNT Technology — Enterprise Software, ERP, WMS & HRMS in Thailand",
     template: "%s | KNT Technology",
   },
   description:
-    "บริษัทพัฒนาซอฟต์แวร์ — เว็บแอปพลิเคชัน โมบายแอป ERP และระบบ Custom สำหรับธุรกิจ",
+    "Enterprise software partner in Thailand. We build custom ERP, warehouse (WMS), HR (HRMS), integration and automation systems for manufacturing, logistics, retail and healthcare — starting with business analysis.",
   keywords: [
-    "software development",
-    "web development",
-    "mobile app",
-    "ERP",
-    "Thailand",
-    "พัฒนาซอฟต์แวร์",
-    "ทำเว็บไซต์",
-    "พัฒนาแอป",
+    "enterprise software development Thailand",
+    "custom software development",
+    "ERP development",
+    "warehouse management system",
+    "WMS",
+    "HRMS",
+    "manufacturing system",
+    "business process automation",
+    "system integration",
+    "digital transformation",
+    "รับพัฒนาซอฟต์แวร์องค์กร",
+    "พัฒนาระบบ ERP",
+    "ระบบคลังสินค้า WMS",
+    "ระบบบริหารงานบุคคล HRMS",
+    "รับทำระบบองค์กร",
   ],
   authors: [{ name: "KNT Technology Co., Ltd." }],
+  creator: "KNT Technology Co., Ltd.",
+  publisher: "KNT Technology Co., Ltd.",
   openGraph: {
-    title: "KNT Technology Co., Ltd.",
-    description: "Software development company in Thailand",
+    siteName: "KNT Technology",
+    title: "KNT Technology — Enterprise Software Partner",
+    description:
+      "Custom ERP, WMS, HRMS, integration and automation for manufacturing, logistics, retail and healthcare — built to enterprise standards.",
     type: "website",
     locale: "th_TH",
     alternateLocale: "en_US",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   icons: {
     icon: "/logo/icon.png",
@@ -71,8 +89,17 @@ export default async function RootLayout({
       className={`${sarabun.variable} ${jakarta.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-white text-ink-900 dark:bg-ink-950 dark:text-white">
+        <JsonLd lang={lang} />
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+        >
+          Skip to content
+        </a>
         <Navbar lang={lang} dict={dict} />
-        <main className="flex-1">{children}</main>
+        <main id="main" className="flex-1">
+          {children}
+        </main>
         <Footer lang={lang} dict={dict} />
       </body>
     </html>
