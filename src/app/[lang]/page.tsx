@@ -64,11 +64,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full border border-brand-400/30 bg-brand-500/10 px-4 py-1.5 text-xs font-semibold text-brand-300 backdrop-blur-sm">
-                <Icon name="sparkle" className="h-3.5 w-3.5" />
-                {h.hero.badge}
-              </span>
-              <h1 className="mt-6 text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
                 {h.hero.title}{" "}
                 <span className="gradient-text">{h.hero.titleHighlight}</span>
               </h1>

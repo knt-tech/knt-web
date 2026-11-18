@@ -28,8 +28,8 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
     <>
       <section className="relative overflow-hidden gradient-brand-dark py-20 text-white">
         <div aria-hidden="true" className="absolute inset-0 bg-grid opacity-40" />
-        <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold sm:text-5xl">{a.title}</h1>
+        <div className="relative mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-extrabold sm:text-5xl lg:whitespace-nowrap">{a.title}</h1>
           {a.subtitle ? (
             <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-200">
               {a.subtitle}
