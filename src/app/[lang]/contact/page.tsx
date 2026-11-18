@@ -5,7 +5,6 @@ import { buildMetadata } from "@/lib/seo";
 import ContactForm from "@/components/ContactForm";
 import Map from "@/components/Map";
 import Icon, { type IconName } from "@/components/Icon";
-import { Eyebrow } from "@/components/Section";
 import { company } from "@/lib/company";
 
 export async function generateMetadata({
@@ -95,10 +94,7 @@ export default async function ContactPage({
       <section className="relative overflow-hidden gradient-brand-dark py-20 text-white">
         <div aria-hidden="true" className="absolute inset-0 bg-grid opacity-40" />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <div className="flex justify-center">
-            <Eyebrow>{dict.nav.contact}</Eyebrow>
-          </div>
-          <h1 className="mt-5 text-4xl font-extrabold sm:text-5xl">{c.title}</h1>
+          <h1 className="text-4xl font-extrabold sm:text-5xl">{c.title}</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-200">
             {c.subtitle}
           </p>

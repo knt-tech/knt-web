@@ -4,7 +4,7 @@ import Image from "next/image";
 import { getDictionary, hasLocale } from "../dictionaries";
 import { buildMetadata } from "@/lib/seo";
 import Icon, { type IconName } from "@/components/Icon";
-import { SectionHeading, Eyebrow } from "@/components/Section";
+import { SectionHeading } from "@/components/Section";
 
 const valueIcons: IconName[] = ["discovery", "target", "shield", "eye"];
 const commitmentIcons: IconName[] = ["lock", "check-circle", "handshake", "support"];
@@ -29,10 +29,7 @@ export default async function AboutPage({ params }: PageProps<"/[lang]/about">) 
       <section className="relative overflow-hidden gradient-brand-dark py-20 text-white">
         <div aria-hidden="true" className="absolute inset-0 bg-grid opacity-40" />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <div className="flex justify-center">
-            <Eyebrow>{dict.nav.about}</Eyebrow>
-          </div>
-          <h1 className="mt-5 text-4xl font-extrabold sm:text-5xl">{a.title}</h1>
+          <h1 className="text-4xl font-extrabold sm:text-5xl">{a.title}</h1>
           {a.subtitle ? (
             <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-200">
               {a.subtitle}

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale } from "../dictionaries";
 import { buildMetadata } from "@/lib/seo";
 import Icon, { type IconName } from "@/components/Icon";
-import { CTASection, Eyebrow } from "@/components/Section";
+import { CTASection } from "@/components/Section";
 
 const solutionIcons: IconName[] = [
   "erp",
@@ -36,10 +36,7 @@ export default async function SolutionsPage({
       <section className="relative overflow-hidden gradient-brand-dark py-20 text-white">
         <div aria-hidden="true" className="absolute inset-0 bg-grid opacity-40" />
         <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-          <div className="flex justify-center">
-            <Eyebrow>{dict.nav.solutions}</Eyebrow>
-          </div>
-          <h1 className="mt-5 text-4xl font-extrabold sm:text-5xl">{s.title}</h1>
+          <h1 className="text-4xl font-extrabold sm:text-5xl">{s.title}</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-ink-200">
             {s.subtitle}
           </p>
