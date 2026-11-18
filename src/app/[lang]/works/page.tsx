@@ -82,10 +82,6 @@ export default async function WorksPage({
           <p className="text-lg leading-relaxed text-ink-600 dark:text-ink-300">
             {w.intro}
           </p>
-          <p className="mt-4 inline-flex items-start gap-2 text-left text-sm text-ink-500 dark:text-ink-400">
-            <Icon name="lock" className="mt-0.5 h-4 w-4 flex-shrink-0" />
-            {w.note}
-          </p>
         </div>
       </section>
 
