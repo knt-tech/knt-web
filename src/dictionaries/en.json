@@ -305,7 +305,6 @@
   },
   "works": {
     "title": "Our Work",
-    "subtitle": "Real systems running in real operations — designed around how each organization actually works.",
     "intro": "A selection of projects from KNT Technology, spanning manufacturing, construction materials and the public sector. Each one started with business analysis and was delivered with documentation, user testing and ongoing support.",
     "labels": {
       "client": "Client",
