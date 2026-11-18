@@ -53,6 +53,20 @@ export default async function ContactPage({
       ),
     },
     {
+      icon: "chat",
+      label: c.info.line,
+      content: (
+        <a
+          href={company.lineUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-base text-ink-900 hover:text-brand-600 dark:text-white"
+        >
+          {company.lineId}
+        </a>
+      ),
+    },
+    {
       icon: "clock",
       label: c.info.hours,
       content: (

@@ -14,6 +14,8 @@ export const company = {
   email: "utarat.k@knttechsolutions.com",
   phone: "092-896-4619",
   phoneRaw: "+66928964619",
+  lineId: "K.Utarat",
+  lineUrl: "https://line.me/ti/p/~K.Utarat",
   github: "https://github.com/knt-tech",
   address: {
     th: {

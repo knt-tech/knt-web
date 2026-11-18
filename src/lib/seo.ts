@@ -7,6 +7,7 @@ export type PageKey =
   | "services"
   | "solutions"
   | "industries"
+  | "works"
   | "process"
   | "about"
   | "contact";
@@ -17,6 +18,7 @@ const segments: Record<PageKey, string> = {
   services: "services",
   solutions: "solutions",
   industries: "industries",
+  works: "works",
   process: "process",
   about: "about",
   contact: "contact",
@@ -49,6 +51,11 @@ const seo: Record<Locale, Record<PageKey, SeoEntry>> = {
       title: "Industries We Serve — Manufacturing, Logistics, Retail & More",
       description:
         "Enterprise software built for manufacturing, logistics & supply chain, retail, healthcare, construction and food & beverage operations across Thailand and Southeast Asia.",
+    },
+    works: {
+      title: "Our Work — Production, B2B Sales & Public-Sector Systems",
+      description:
+        "Selected projects by KNT Technology: a real-time production control system integrated with ERP, a B2B web sales platform, and public-sector knowledge and records systems.",
     },
     process: {
       title: "How We Work — A Transparent Software Delivery Process",
@@ -87,6 +94,11 @@ const seo: Record<Locale, Record<PageKey, SeoEntry>> = {
       title: "กลุ่มธุรกิจและอุตสาหกรรมที่เราดูแล — การผลิต โลจิสติกส์ ค้าปลีก และอื่นๆ",
       description:
         "ซอฟต์แวร์องค์กรสำหรับทุกประเภทธุรกิจ ทั้งการผลิต โลจิสติกส์และซัพพลายเชน ค้าปลีก สุขภาพ ก่อสร้าง และอาหารและเครื่องดื่ม ทั่วไทยและเอเชียตะวันออกเฉียงใต้",
+    },
+    works: {
+      title: "ผลงานของเรา — ระบบการผลิต ระบบขาย B2B และระบบภาครัฐ",
+      description:
+        "ตัวอย่างผลงานของ KNT Technology ทั้งระบบบันทึกการผลิตแบบเรียลไทม์เชื่อมต่อ ERP แพลตฟอร์มขาย B2B และระบบคลังความรู้และทะเบียนประวัติของหน่วยงานภาครัฐ",
     },
     process: {
       title: "วิธีการทำงาน — กระบวนการส่งมอบซอฟต์แวร์ที่โปร่งใส",

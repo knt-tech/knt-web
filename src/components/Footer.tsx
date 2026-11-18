@@ -114,6 +114,7 @@ export default function Footer({ lang, dict }: FooterProps) {
                 { href: `/${lang}/solutions`, label: dict.nav.solutions },
                 { href: `/${lang}/services`, label: dict.nav.services },
                 { href: `/${lang}/industries`, label: dict.nav.industries },
+                { href: `/${lang}/works`, label: dict.nav.works },
                 { href: `/${lang}/process`, label: dict.nav.process },
               ].map((item) => (
                 <li key={item.href}>

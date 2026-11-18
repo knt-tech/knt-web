@@ -41,7 +41,9 @@ export type IconName =
   | "phone"
   | "map-pin"
   | "chat"
-  | "document";
+  | "document"
+  | "library"
+  | "records";
 
 const paths: Record<IconName, React.ReactNode> = {
   "custom-software": (
@@ -190,6 +192,16 @@ const paths: Record<IconName, React.ReactNode> = {
   ),
   document: (
     <path d="M6 3h8l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm8 0v4h4M8.5 12.5h7M8.5 16h7" />
+  ),
+  library: (
+    <path d="M4.5 4.5h3.5v15H4.5zM10 4.5h3.5v15H10zM15.6 5.2l3.3-.9 3.6 14.5-3.3.9zM3 19.5h18" />
+  ),
+  records: (
+    <>
+      <rect x="3.75" y="4.5" width="16.5" height="15" rx="2" />
+      <circle cx="9" cy="10.5" r="2" />
+      <path d="M6 16c.5-1.6 1.6-2.5 3-2.5s2.5.9 3 2.5M14 9.5h3.5M14 12.5h3.5M14 15.5h2" />
+    </>
   ),
 };
 

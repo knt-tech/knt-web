@@ -4,6 +4,7 @@
     "services": "Services",
     "solutions": "Solutions",
     "industries": "Industries",
+    "works": "Our Work",
     "process": "How We Work",
     "about": "About",
     "contact": "Contact",
@@ -61,6 +62,11 @@
       "title": "Industries we know",
       "subtitle": "We speak the language of your operation — its bottlenecks, compliance needs and margins.",
       "viewAll": "See all industries"
+    },
+    "works": {
+      "title": "Selected work",
+      "subtitle": "Systems we have designed, built and supported — from the production floor to public-sector information services.",
+      "viewAll": "See all our work"
     },
     "process": {
       "title": "A delivery process built on transparency",
@@ -297,6 +303,102 @@
       "button": "Book a Free Consultation"
     }
   },
+  "works": {
+    "title": "Our Work",
+    "subtitle": "Real systems running in real operations — designed around how each organization actually works.",
+    "intro": "A selection of projects from KNT Technology, spanning manufacturing, construction materials and the public sector. Each one started with business analysis and was delivered with documentation, user testing and ongoing support.",
+    "note": "Client names are withheld under confidentiality. Screenshots show demo data with client branding removed.",
+    "labels": {
+      "client": "Client",
+      "year": "Year",
+      "industry": "Industry",
+      "highlights": "What we delivered",
+      "tech": "Technology",
+      "featured": "Featured project",
+      "screens": "Inside the system"
+    },
+    "projects": [
+      {
+        "id": "production",
+        "title": "Real-time Production Control System, integrated with ERP",
+        "client": "Steel products manufacturer",
+        "industry": "Manufacturing",
+        "year": "2025 – 2026",
+        "summary": "A tablet-first system that records production on the shop floor as it happens — machine runs, material consumption, output, quality inspections and loss time — and synchronizes with the company's Microsoft Dynamics NAV 2013 ERP, replacing paper logs and end-of-day re-keying.",
+        "highlights": [
+          "Production planning and work orders by machine",
+          "Material consumption and lot tracking with barcode scanning",
+          "Configurable QC inspection form templates",
+          "OEE, yield, utilization and labor-productivity dashboards",
+          "Daily production report with PDF and Excel export",
+          "ERP integration, role-based access and full audit log"
+        ],
+        "tech": ["React", ".NET 8 Web API", "SQL Server", "Android tablet app", "Dynamics NAV integration"],
+        "gallery": [
+          "Daily production overview",
+          "Live production order on the shop floor",
+          "QC inspection template builder",
+          "Real-time machine status dashboard"
+        ]
+      },
+      {
+        "id": "b2b",
+        "title": "B2B Web Sales & Ordering Platform",
+        "client": "Cement manufacturer (delivered with a technology partner)",
+        "industry": "Construction materials",
+        "year": "2024 – 2026",
+        "summary": "An online sales platform for dealers and corporate customers, covering products, pricing, ordering, customer relationships and promotions, with dashboards for the sales team. In 2026 we followed up with a cloud migration plan for the platform.",
+        "highlights": [
+          "Product catalogue and customer-specific pricing",
+          "Online ordering and order tracking",
+          "Customer, campaign and promotion management",
+          "Sales dashboards and reporting",
+          "Cloud migration assessment and roadmap"
+        ],
+        "tech": ["Angular", "ASP.NET Web API", "SQL Server", "Cloud migration"],
+        "gallery": []
+      },
+      {
+        "id": "library",
+        "title": "Knowledge Management & Digital Library",
+        "client": "Public-sector medical agency",
+        "industry": "Public sector · Healthcare",
+        "year": "2024",
+        "summary": "A public knowledge portal and admin back office for publishing, organizing and searching medical knowledge and digital resources, so staff and the public can find information quickly and the content team can manage it without developer help.",
+        "highlights": [
+          "Searchable public portal for articles and digital resources",
+          "Content back office with categories and publishing workflow",
+          "Role-based permissions for editors and administrators",
+          "Server-side rendering for speed and search visibility",
+          "Containerized deployment"
+        ],
+        "tech": ["Angular (SSR)", ".NET Web API", "Docker"],
+        "gallery": []
+      },
+      {
+        "id": "records",
+        "title": "Personnel Registration & History Records System",
+        "client": "Government agency (delivered with a technology partner)",
+        "industry": "Public sector",
+        "year": "2024",
+        "summary": "A system for storing, searching and administering personnel registration and history records, built on a documented data dictionary and status workflows, with clear access control for each user role.",
+        "highlights": [
+          "Structured registration and history records",
+          "Fast search and record administration",
+          "Status workflow for record changes",
+          "Role-based access control",
+          "Full data dictionary and system documentation"
+        ],
+        "tech": ["Angular", ".NET Web API", "Relational database"],
+        "gallery": []
+      }
+    ],
+    "cta": {
+      "title": "Have a similar challenge?",
+      "subtitle": "Tell us about your operation. We'll share how we approached comparable projects and propose a clear first step.",
+      "button": "Book a Free Consultation"
+    }
+  },
   "about": {
     "title": "Your enterprise technology partner",
     "subtitle": "We solve business problems through technology — starting with understanding the business.",
@@ -370,6 +472,7 @@
     "info": {
       "email": "Email",
       "phone": "Phone",
+      "line": "LINE ID",
       "address": "Address",
       "hours": "Business Hours",
       "hoursValue": "Monday – Friday, 9:00 AM – 6:00 PM"

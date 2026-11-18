@@ -6,6 +6,7 @@ import { getDictionary, hasLocale } from "./dictionaries";
 import { buildMetadata } from "@/lib/seo";
 import Icon, { type IconName } from "@/components/Icon";
 import { SectionHeading, CTASection } from "@/components/Section";
+import WorkCard from "@/components/WorkCard";
 
 const whyIcons: IconName[] = ["discovery", "shield", "erp", "handshake"];
 const serviceIcons: IconName[] = [
@@ -134,6 +135,35 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Selected work */}
+      <section className="bg-ink-50 py-20 dark:bg-ink-950">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow={dict.nav.works}
+            title={h.works.title}
+            subtitle={h.works.subtitle}
+          />
+          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {dict.works.projects
+              .filter((p) => p.id !== "records")
+              .map((project) => (
+                <Link key={project.id} href={`/${lang}/works`} className="block">
+                  <WorkCard project={project} />
+                </Link>
+              ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Link
+              href={`/${lang}/works`}
+              className="inline-flex items-center gap-2 text-base font-semibold text-brand-600 hover:text-brand-700 dark:text-brand-400"
+            >
+              {h.works.viewAll}
+              <Icon name="arrow-right" className="h-5 w-5" />
+            </Link>
           </div>
         </div>
       </section>

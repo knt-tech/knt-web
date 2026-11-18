@@ -21,6 +21,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
     { href: `/${lang}/services`, label: dict.nav.services },
     { href: `/${lang}/solutions`, label: dict.nav.solutions },
     { href: `/${lang}/industries`, label: dict.nav.industries },
+    { href: `/${lang}/works`, label: dict.nav.works },
     { href: `/${lang}/about`, label: dict.nav.about },
     { href: `/${lang}/contact`, label: dict.nav.contact },
   ];
@@ -42,7 +43,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             className="h-10 w-10 object-contain"
             priority
           />
-          <div className="hidden sm:block">
+          <div className="hidden sm:block lg:hidden xl:block">
             <div className="text-sm font-bold text-ink-900 dark:text-white whitespace-nowrap">
               KNT TECHNOLOGY CO., LTD.
             </div>
@@ -54,7 +55,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             <Link
               key={item.href}
               href={item.href}
-              className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+              className={`whitespace-nowrap rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
                 isActive(item.href)
                   ? "bg-brand-50 text-brand-700 dark:bg-brand-900/30 dark:text-brand-300"
                   : "text-ink-700 hover:bg-ink-50 hover:text-brand-600 dark:text-ink-200 dark:hover:bg-ink-800 dark:hover:text-brand-400"
